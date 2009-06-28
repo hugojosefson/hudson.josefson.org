@@ -3,5 +3,5 @@ LOG="$HUDSON_HOME/log/hudson.log"
 DESC="Hudson Continuous Build Integration"
 NAME=hudson
 DAEMON="/usr/bin/java"
-DAEMON_ARGS="-jar "$HUDSON_HOME/hudson.war" --httpPort=8080 --ajp13Port=-1"
+DAEMON_ARGS="-jar "$HUDSON_HOME/hudson.war" --httpPort=8080 --httpListenAddress=127.0.0.1 --ajp13Port=-1 --logfile $LOG"
 DAEMON_USER="hudson"
