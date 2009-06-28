@@ -1,0 +1,7 @@
+HUDSON_HOME=/home/hudson/root
+LOG="$HUDSON_HOME/log/hudson.log"
+DESC="Hudson Continuous Build Integration"
+NAME=hudson
+DAEMON="/usr/bin/java"
+DAEMON_ARGS="-jar "$HUDSON_HOME/hudson.war" --httpPort=8080 --ajp13Port=-1"
+DAEMON_USER="hudson"
