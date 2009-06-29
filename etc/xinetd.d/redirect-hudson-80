@@ -1,6 +1,7 @@
-service redirect80
+service redirect-hudson-80
 {
         port                    = 80
+        bind                    = 69.197.175.79
         type                    = UNLISTED
         disable                 = no
         socket_type             = stream
