@@ -5,3 +5,6 @@ NAME=hudson
 DAEMON="/usr/bin/java"
 DAEMON_ARGS="-jar "$HUDSON_HOME/hudson.war" --httpPort=8080 --httpListenAddress=127.0.0.1 --ajp13Port=-1 --logfile="$LOG
 DAEMON_USER="hudson"
+export ANDROID_SDK_11=/opt/android-sdk-linux_x86-1.1_r1
+export ANDROID_SDK_15=/opt/android-sdk-linux_x86-1.5_r2
+
