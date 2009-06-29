@@ -1,0 +1,10 @@
+service redirect80
+{
+        port                    = 80
+        type                    = UNLISTED
+        disable                 = no
+        socket_type             = stream
+        wait                    = no
+        user                    = nobody
+        redirect                = 127.0.0.1 8080
+}
