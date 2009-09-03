@@ -14,7 +14,7 @@ NOTE: These instructions are typed from memory, so please send any comments and
 
 Here goes:
 
-1.  Install Ubuntu Server on a dedicated (possibly virtual) machine.
+1.  Install Ubuntu Server 9.04 on a dedicated (possibly virtual) machine.
     # Let the admin account be named something like 'admin' or 'administrator'. Not 'hudson'.
     # ¡IMPORTANT! Activate automatic installation of security updates. Included in latest Ubuntu version. In older versions you might need to install "unattended-upgrades" and also configure it correctly. I say go with the latest Ubuntu version.
 
@@ -22,7 +22,7 @@ Here goes:
 As the administrator user:
 -----
 
-2.  sudo aptitude install java6-runtime-headless xinetd git-core subversion
+2.  sudo aptitude install openjdk-6-jre-headless xinetd git-core subversion
     # this java runtime is just for launching hudson, not for builds. you can let hudson download various versions of build tools (sun jdk, maven and ant) from the internet once you're up and running.
     # xinetd is used for publishing hudson on port 80 in a secure way.
     # git is needed for downloading my scripts during setup, and can also be used for builds inside hudson later.
