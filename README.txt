@@ -49,7 +49,7 @@ As the administrator user:
 As the 'hudson' user:
 -----
 
-9.  mkdir ~/root
+9.  mkdir -p ~/root/log
     cd ~/root
     wget http://hudson.gotdns.com/latest/hudson.war
 
