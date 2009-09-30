@@ -49,7 +49,9 @@ As the administrator user:
 As the 'hudson' user:
 -----
 
-9.  wget http://hudson.gotdns.com/latest/hudson.war
+9.  mkdir ~/root
+    cd ~/root
+    wget http://hudson.gotdns.com/latest/hudson.war
 
 10. exit
 
